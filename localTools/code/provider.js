@@ -18,7 +18,7 @@ async function scheduleHtmlProvider() {
     // 获取学年
     const year = await AISchedulePrompt({
       titleText: '学年',
-      tipText: '请输入本学年开始的年份',
+      tipText: '请输入本学年开始的年份（注意，此处填写学年开始时间，而不是学期开始时间。春季学期开学年份比学年开始时间大1，此处统一填写当前学年夏季学期的开始年份，不是学期开始年份）',
       defaultText: '2024',
       validator: value => {
         try {
