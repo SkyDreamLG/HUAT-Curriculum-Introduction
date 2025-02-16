@@ -53,5 +53,5 @@ async function scheduleTimer({
 // 判断是否为夏令时的函数
 function confirmSummerTime() {
   const currentMonth = new Date().getMonth() + 1; // 获取当前月份（1-12）
-  return currentMonth >= 5 && currentMonth <= 9; // 假设5月至9月为夏令时
+  return currentMonth >= 4 && currentMonth <= 9; // 假设5月至9月为夏令时
 }
