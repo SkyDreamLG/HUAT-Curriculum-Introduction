@@ -53,5 +53,5 @@ sections: [
 // 判断是否为夏令时的函数
 function confirmSummerTime() {
 const currentMonth = new Date().getMonth() + 1; // 获取当前月份（1-12）
-return currentMonth >= 4 && currentMonth <= 9; // 假设5月至9月为夏令时（此处为适配部分同学提前导入新时间，故将匹配开始时间提前一个月，结束时间由于与开学时间距离太近容易误判，故不作调整）
+return currentMonth >= 5 && currentMonth <= 9; // 假设5月至9月为夏令时
 }
