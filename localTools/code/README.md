@@ -2,6 +2,9 @@
 在新版教务系统中，身份认证使用cookie和x-token两个方式认证
 用户登陆后，服务器会返回一个token,然后通过这个token向服务器请求获取x-token并保存在cookie中的Admin-Token字段中
 通过API向服务器请求时，数据包头中需要带有x-token字段。该字段可通过代码从cookie中获取
+
+第一个token在请求完x-token就没有再使用了，后续数据包中均使用x-token进行身份认证。
+
 # 请求数据包编辑
 ## API接口信息
 在新版教务系统中，前端页面通过API接口方式请求获取课表，请求地址为：`https://neweas.wvpn.huat.edu.cn/api/teachTask/list`，请求方式为POST
